@@ -25,7 +25,7 @@ jobs:
             8.0.x
 
       - name: Create new webapi with CLI
-        run: dotnet new console
+        run: dotnet new nunit
 
       - name: Run the default console app
-        run: dotnet run
+        run: dotnet test
