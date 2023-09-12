@@ -24,8 +24,11 @@ jobs:
           dotnet-version: | 
             8.0.x
 
-      - name: Create new webapi with CLI
+      - name: Create test project
         run: dotnet new nunit
 
-      - name: Run the default console app
+      - name: Show me the test file
+        run: cat UnitTest1.cs
+
+      - name: Run the test
         run: dotnet test
