@@ -30,12 +30,11 @@ jobs:
           dotnet-version: | 
             8.0.x
             
-      # Make new web api
+      # Make new console app
       - name: Create new webapi with CLI
-        run: dotnet new webapi --use-controllers
+        run: dotnet new console
 
       # Run the web api
-      - name: Run the default web API
-        run: |
-          dotnet run
+      - name: Run the default console app
+        run: dotnet run
           
