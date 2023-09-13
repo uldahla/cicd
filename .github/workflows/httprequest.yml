@@ -4,10 +4,10 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-  workflow-dispatch:
+  workflow_dispatch:
 
 jobs:
   request:
     runs-on: ubuntu-latest
     steps:
-      run: curl https://dummyjson.com/products/1
+      - run: curl https://dummyjson.com/products/1
