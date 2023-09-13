@@ -1,5 +1,9 @@
 name: http request dummy json
 on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
   workflow-dispatch:
 
 jobs:
