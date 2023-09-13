@@ -6,4 +6,5 @@ jobs:
   request:
     runs-on: ubuntu-linux
     steps:
-      - run: curl https://dummyjson.com/products/1
+      - name: send a cURL request to URL
+        run: curl https://dummyjson.com/products/1
