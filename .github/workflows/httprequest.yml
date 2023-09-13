@@ -1,10 +1,9 @@
 name: http request dummy json
 on:
-  workflow_dispatch:
+  workflow-dispatch:
 
 jobs:
   request:
-    runs-on: ubuntu-linux
+    runs-on: ubuntu-latest
     steps:
-      - name: send a cURL request to URL
-        run: curl https://dummyjson.com/products/1
+      run: curl https://dummyjson.com/products/1
